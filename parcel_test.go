@@ -15,7 +15,7 @@ import (
 // Тест при случае: Запрос сформирован корректно, сервис возвращает код ответа 200 и тело ответа не пустое.
 func TestCorrectRequestReturns200Status(t *testing.T) {
 
-	testCount := strconv.Itoa(20)
+	testCount := strconv.Itoa(4)
 	testCity := "moscow"
 
 	req, err := http.NewRequest("GET", "http://localhost/?count="+testCount+"&city="+testCity, nil)
